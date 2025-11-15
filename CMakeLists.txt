@@ -28,6 +28,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ThrusterOutputAll.msg"
   "msg/ThrusterState.msg"
   "msg/ThrusterStateAll.msg"
+
+  DEPENDENCIES
+    std_msgs # used in LedTapeOutput.msg
+    geometry_msgs
 )
 
 ament_package()
