@@ -20,6 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/LedTapeOutput.msg"
   "msg/LowPowerCircuitInfo.msg"
   "msg/MainPowerEnabled.msg"
+  "msg/MainPowerOutput.msg"
   "msg/RobotState.msg"
   "msg/Target.msg"
   "msg/ThrusterEnabled.msg"
