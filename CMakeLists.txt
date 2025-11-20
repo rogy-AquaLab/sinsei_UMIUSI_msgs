@@ -30,6 +30,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ThrusterState.msg"
   "msg/ThrusterStateAll.msg"
 
+  "srv/PowerOff.srv"
+  "srv/PowerOn.srv"
+  "srv/SetState.srv"
+
   DEPENDENCIES
     std_msgs # used in LedTapeOutput.msg
     geometry_msgs

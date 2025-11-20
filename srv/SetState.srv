@@ -8,3 +8,4 @@ int8 DEBUG   = 3
 int8 state
 ---
 bool success
+string error_msg
