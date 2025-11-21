@@ -10,29 +10,30 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/EscState.msg"
-  "msg/HeadlightsOutput.msg"
-  "msg/HealthCheckResult.msg"
-  "msg/HighPowerCircuitHealth.msg"
-  "msg/HighPowerCircuitInfo.msg"
-  "msg/ImuState.msg"
-  "msg/IndicatorLedOutput.msg"
-  "msg/LedTapeOutput.msg"
-  "msg/LowPowerCircuitInfo.msg"
-  "msg/MainPowerEnabled.msg"
-  "msg/MainPowerOutput.msg"
-  "msg/RobotState.msg"
-  "msg/Target.msg"
-  "msg/ThrusterEnabled.msg"
-  "msg/ThrusterEnabledAll.msg"
-  "msg/ThrusterOutput.msg"
-  "msg/ThrusterOutputAll.msg"
-  "msg/ThrusterState.msg"
-  "msg/ThrusterStateAll.msg"
+  msg/EscState.msg
+  msg/HeadlightsOutput.msg
+  msg/HealthCheckResult.msg
+  msg/HighPowerCircuitHealth.msg
+  msg/HighPowerCircuitInfo.msg
+  msg/ImuState.msg
+  msg/IndicatorLedOutput.msg
+  msg/LedTapeOutput.msg
+  msg/LowPowerCircuitInfo.msg
+  msg/MainPowerEnabled.msg
+  msg/MainPowerOutput.msg
+  msg/RobotState.msg
+  msg/Target.msg
+  msg/ThrusterEnabled.msg
+  msg/ThrusterEnabledAll.msg
+  msg/ThrusterOutput.msg
+  msg/ThrusterOutputAll.msg
+  msg/ThrusterState.msg
+  msg/ThrusterStateAll.msg
 
-  "srv/PowerOff.srv"
-  "srv/PowerOn.srv"
-  "srv/SetState.srv"
+  srv/PowerOff.srv
+  srv/PowerOn.srv
+  srv/SetMode.srv
+  srv/SetState.srv # TODO: remove when no longer used in sinsei_umiusi_core
 
   DEPENDENCIES
     std_msgs # used in LedTapeOutput.msg
