@@ -1,5 +1,7 @@
 # Thruster state
-# ThrusterOutput ... { mode: ThrusterMode, duty_cycle: float64, angle: float64 }
+# ThrusterMode ... { esc: int8, servo: int8 }
 
-ThrusterOutput  output
-float64         rpm
+ThrusterMode mode
+float64      duty_cycle  # (-1.0 ~ 1.0)
+float64      angle       # [rad]
+float64      rpm
