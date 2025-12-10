@@ -1,5 +1,5 @@
 # All thruster states
-# ThrusterState ... { enabled: ThrusterEnabled, output: ThrusterOutput, rpm: float64 }
+# ThrusterState ... { mode: ThrusterMode, output: ThrusterOutput, rpm: float64 }
 
 ThrusterState lf
 ThrusterState lb
