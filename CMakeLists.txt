@@ -23,10 +23,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/MainPowerOutput.msg
   msg/RobotState.msg
   msg/Target.msg
-  msg/ThrusterEnabled.msg
-  msg/ThrusterEnabledAll.msg
+  msg/ThrusterMode.msg
   msg/ThrusterOutput.msg
   msg/ThrusterOutputAll.msg
+  msg/ThrusterRunnable.msg
+  msg/ThrusterRunnableAll.msg
   msg/ThrusterState.msg
   msg/ThrusterStateAll.msg
 
