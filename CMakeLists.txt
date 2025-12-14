@@ -33,7 +33,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/PowerOff.srv
   srv/PowerOn.srv
   srv/SetMode.srv
-  srv/SetState.srv # TODO: remove when no longer used in sinsei_umiusi_core
 
   DEPENDENCIES
     std_msgs # used in LedTapeOutput.msg
