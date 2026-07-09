@@ -8,7 +8,6 @@ bool is_esc_lb_voltage_ok
 bool is_esc_rb_voltage_ok
 bool is_esc_rf_voltage_ok
 
-bool is_current_ok
 bool is_temperature_ok
 
 bool water_leaked
