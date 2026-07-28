@@ -15,7 +15,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/HealthCheckResult.msg
   msg/HighPowerCircuitHealth.msg
   msg/HighPowerCircuitInfo.msg
-  msg/ImuState.msg
   msg/IndicatorLedOutput.msg
   msg/LedTapeOutput.msg
   msg/LowPowerCircuitInfo.msg
