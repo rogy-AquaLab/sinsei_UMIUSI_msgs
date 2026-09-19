@@ -10,6 +10,7 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  msg/AttitudeTarget.msg
   msg/EscState.msg
   msg/HeadlightsOutput.msg
   msg/HealthCheckResult.msg
