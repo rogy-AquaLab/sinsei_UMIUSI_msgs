@@ -5,3 +5,5 @@ ThrusterMode mode
 float64      duty_cycle  # (-1.0 ~ 1.0)
 float64      angle       # [rad]
 float64      rpm
+float32      input_voltage  # [V]
+bool         water_leaked
