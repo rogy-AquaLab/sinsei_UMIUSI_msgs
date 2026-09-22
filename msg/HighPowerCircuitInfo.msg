@@ -2,7 +2,6 @@
 # EscState ... { voltage: float64, water_leaked: bool }
 
 float64 voltage      # [V]
-float64 current      # [A]
 float64 temperature  # [degC]
 bool    water_leaked
 EscState esc_lf_state
