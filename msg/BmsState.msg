@@ -21,9 +21,7 @@ uint32 FAULT_CHARGE_OVERCURRENT=8
 float32 state_of_health       # (0.0 ~ 1.0)
 float32 cell_voltage_min      # [V]
 float32 cell_voltage_max      # [V]
-float32 cell_temperature_max  # [degC]
 
-bool charging
 bool balancing
 bool charge_allowed
 
@@ -35,25 +33,10 @@ float32 charger_voltage  # [V]
 
 # Temperature sensors. Unavailable values are NaN.
 float32 balance_ic_temperature       # [degC]
-float32 cell_temperature_min         # [degC]
 float32 mosfet_temperature           # [degC]
 float32 ambient_temperature          # [degC]
-float32[] additional_temperatures    # [degC]
+float32[5] additional_temperatures   # [degC], board-specific sensors 0 ~ 4
 
-# Humidity sensor. Unavailable values are NaN.
-float32 humidity_sensor_temperature  # [degC]
-float32 relative_humidity            # [%RH]
-
-# Coulomb and energy counters
-float32 net_consumed_charge       # [Ah], positive when discharged
-float32 net_consumed_energy       # [Wh], positive when discharged
-float32 total_charged_charge      # [Ah]
-float32 total_charged_energy      # [Wh]
-float32 total_discharged_charge   # [Ah]
-float32 total_discharged_energy   # [Wh]
-
-# Harmony-specific status
+# Structured BMS status
 uint8 power_switch_state
 uint32 fault_flags
-uint8 data_version
-string status_text
