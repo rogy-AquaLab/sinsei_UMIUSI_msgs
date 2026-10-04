@@ -11,9 +11,11 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   msg/BmsState.msg
+  msg/HeadlightsEnabled.msg
   msg/HeadlightsOutput.msg
   msg/HealthCheckResult.msg
   msg/HighPowerCircuitInfo.msg
+  msg/IndicatorLedEnabled.msg
   msg/IndicatorLedOutput.msg
   msg/LedTapeOutput.msg
   msg/LowPowerCircuitInfo.msg
