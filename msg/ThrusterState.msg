@@ -7,3 +7,5 @@ float64      commanded_angle           # [rad]
 bool         estimated_angle_available  # Whether estimated_angle is available
 float64      estimated_angle           # [rad], NaN when unavailable
 float64      rpm
+float32      input_voltage  # [V]
+bool         water_leaked
