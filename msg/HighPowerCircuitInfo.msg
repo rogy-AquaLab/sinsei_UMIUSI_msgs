@@ -1,11 +1,16 @@
-# High power circuit health-related values
-# EscState ... { voltage: float64, water_leaked: bool }
+# High power circuit health status
 
-float64 voltage      # [V]
-float64 current      # [A]
-float64 temperature  # [degC]
-bool    water_leaked
-EscState esc_lf_state
-EscState esc_lb_state
-EscState esc_rb_state
-EscState esc_rf_state
+int8 OK=0
+int8 ERROR=1
+
+# Communication with the BMS and freshness of its data
+int8 bms
+
+# Battery measurements and BMS faults
+int8 battery
+
+# ESC communication, voltage, and water leak status
+int8 esc_lf
+int8 esc_lb
+int8 esc_rb
+int8 esc_rf
